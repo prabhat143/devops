@@ -1,6 +1,7 @@
 # devops wuth k8s
 
-## install hyperkit whoch is a VM <br>
+## install hyperkit which is a VM <br>
+brew install hyperkit
 
 ## install kubernetes
 brew install minikube
