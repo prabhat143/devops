@@ -21,3 +21,12 @@ kubectl get nodes <br>
 
 ## Get minikube status <br>
 minikube status
+
+## Get minikube status <br>
+minikube status
+
+## Kubectl cli purpose<br>
+For configring the MiniKube CLuster
+
+## minikube cli purpose<br>
+For start up/deleting the cluster
