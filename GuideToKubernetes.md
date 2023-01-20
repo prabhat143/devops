@@ -30,3 +30,17 @@ For configring the MiniKube CLuster
 
 ## minikube cli purpose<br>
 For start up/deleting the cluster
+
+## CRUD commands<br>
+create deployement -> kubecli create deployment [name]
+Edit deployment -> kubecli edit deployment [name]
+delete deployment -> kubecli delete deployment [name]
+
+## Status of different k8s componnents<br>
+kubecli get nodes | pod | services | replicaset | deployment
+
+## Debugging pods<br>
+log to consile -> kubecli logs [pod name]
+get Interactive Terminal -> kubel exec -it [pod name] -- bin/bash
+
+
