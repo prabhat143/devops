@@ -12,6 +12,6 @@ kubectl
 ## To check minikube<br>
 minikube
 
-## Create and start the clustor<br>
-minikube start --vm-driver=hyperkit
+## Create and start the clustor <br>
+minikube start --vm-driver=hyperkit <br>
     -- This will install docker into the system.
