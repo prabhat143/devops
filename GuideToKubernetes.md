@@ -14,4 +14,10 @@ minikube
 
 ## Create and start the clustor <br>
 minikube start --vm-driver=hyperkit <br>
-    -- This will install docker into the system.
+    -- This will install docker into the system. <br>
+    
+## Get status of the node <br>
+kubectl get nodes <br>
+
+## Get minikube status <br>
+minikube status
