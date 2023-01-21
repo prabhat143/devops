@@ -15,8 +15,8 @@ kubectl get services
 
 ## create a pod <br>
 In k8 world pod is the smallest unit. but you are creating deployment - absraction over pod
-Usage:
-   kubectl create deployment NAME --image=image [--dry-run] [options]
+Usage:<br>
+   kubectl create deployment NAME --image=image [--dry-run] [options]<br>
    example : kubectl create deployment nginx-depl --image=nginx
    
 ## Get replicaset <br>   
