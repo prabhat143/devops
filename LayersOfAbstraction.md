@@ -29,12 +29,13 @@ kubectl describe pod [pod name] <br>
   Normal  Started    3m21s  kubelet            Started container mongo<br>
       
  
-# To create a Interactive Terminal(-it) for specific pod
-kubectl exec -it [pod name] -- bin/bash
+# To create a Interactive Terminal(-it) for specific pod <br>
+kubectl exec -it [pod name] -- bin/bash <br>
     
 #Delete deployment
-kubectl delete deployment [deployment name]
+kubectl delete deployment [deployment name] <br>
       
 #Apply configuration  - in practice you use configuration file rather commands to execute kuberntes
-kubectl apply -f [configuration file name]
+kubectl apply -f [configuration file name] <br>
+      example kubectl apply -f config-file.yml <br>
       
