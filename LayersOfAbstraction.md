@@ -1,8 +1,8 @@
 # devops
 
-Deployemnt manages replicaset
-replicaset manages pod
-pod is an abstraction of containers.
+Deployemnt manages replicaset <br>
+replicaset manages pod <br>
+pod is an abstraction of containers. <br>
 
 Everything below the deplyment is handled by kubernetes
 
