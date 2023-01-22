@@ -27,5 +27,10 @@ kubectl describe pod [pod name] <br>
   Normal  Pulled     3m21s  kubelet            Successfully pulled image "mongo" in 33.65748325s<br>
   Normal  Created    3m21s  kubelet            Created container mongo<br>
   Normal  Started    3m21s  kubelet            Started container mongo<br>
+      
+ 
+ # To create a Interactive Terminal(-it) for specific pod
+  kubectl exec -it [pod name] -- bin/bash
+    
 
       
