@@ -17,15 +17,15 @@ kubectl logs [pod name]
 kubectl create deployment mongo-depl --image=mongo      
       
 ## Describe a pod
-kubectl describe pod [pod name]
-      Sample O/P
-      Events:
-  Type    Reason     Age    From               Message
-  ----    ------     ----   ----               -------
-  Normal  Scheduled  3m55s  default-scheduler  Successfully assigned default/mongo-depl-8fbdb868c-4b946 to minikube
-  Normal  Pulling    3m55s  kubelet            Pulling image "mongo"
-  Normal  Pulled     3m21s  kubelet            Successfully pulled image "mongo" in 33.65748325s
-  Normal  Created    3m21s  kubelet            Created container mongo
-  Normal  Started    3m21s  kubelet            Started container mongo
+kubectl describe pod [pod name] <br>
+      Sample O/P <br>
+      Events: <br>
+  Type    Reason     Age    From               Message <br>
+  ----    ------     ----   ----               ------- <br>
+  Normal  Scheduled  3m55s  default-scheduler  Successfully assigned default/mongo-depl-8fbdb868c-4b946 to minikube<br>
+  Normal  Pulling    3m55s  kubelet            Pulling image "mongo" <br>
+  Normal  Pulled     3m21s  kubelet            Successfully pulled image "mongo" in 33.65748325s<br>
+  Normal  Created    3m21s  kubelet            Created container mongo<br>
+  Normal  Started    3m21s  kubelet            Started container mongo<br>
 
       
