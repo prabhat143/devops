@@ -16,7 +16,7 @@ kubectl logs [pod name]
 ## Install mongo db<bro>
 kubectl create deployment mongo-depl --image=mongo      
       
-## Describe a pod
+## Describe a pod / get info of the pod
 kubectl describe pod [pod name] <br>
       Sample O/P <br>
       Events: <br>
@@ -65,4 +65,7 @@ spec:  ------ this spec for deployment
 Save the file with name nginx-deployment.yaml and run the below command <br>
 kubectl apply -f nginx-deployment.yaml - on first time this command will create a pod output like this "deployment.apps/nginx-deployment created" <br>
 Make any changes in config file like add relicas as 2, on running the same command will detect the changes in the file
-and gives out like this "deployment.apps/nginx-deployment configured"      
+and gives out like this "deployment.apps/nginx-deployment configured" 
+      
+ # Delete configuration file
+ kubectl delete -f [configuration file name]     
