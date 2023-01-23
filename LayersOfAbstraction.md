@@ -46,7 +46,7 @@ metadata:
     name: nginx-deployment 
     labels:
         app: nginx 
-spec:
+spec:  ------ this spec for deployment
     replicas: 1 
     selector:
         matchLabels: 
@@ -55,11 +55,14 @@ spec:
         metadata:
             labels:
                 app: nginx 
-        spec:
+        spec:  ------ this spec for pod
             containers:
             - name: nginx 
                 image: nginx:1.16
                 ports:
                 - containerPort: 80 
 ```
-      
+Save the file with name nginx-deployment.yaml and run the below command <br>
+kubectl apply -f nginx-deployment.yaml - on first time this command will create a pod output like this "deployment.apps/nginx-deployment created" <br>
+Make any changes in config file like add relicas as 2, on running the same command will detect the changes in the file
+and gives out like this "deployment.apps/nginx-deployment configured"      
