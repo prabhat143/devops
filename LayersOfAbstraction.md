@@ -38,4 +38,28 @@ kubectl delete deployment [deployment name] <br>
 #Apply configuration  - in practice you use configuration file rather commands to execute kuberntes
 kubectl apply -f [configuration file name] <br>
       example kubectl apply -f config-file.yml <br>
+### sample config file to deploy nginx
+```
+apiVersion: apps/v1 
+kind: Deployment 
+metadata:
+    name: nginx-deployment 
+    labels:
+        app: nginx 
+spec:
+    replicas: 1 
+    selector:
+        matchLabels: 
+            app: nginx
+    template:
+        metadata:
+            labels:
+                app: nginx 
+        spec:
+            containers:
+            - name: nginx 
+                image: nginx:1.16
+                ports:
+                - containerPort: 80 
+```
       
